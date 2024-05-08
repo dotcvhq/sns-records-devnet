@@ -5,7 +5,7 @@ use {
     borsh::{BorshDeserialize, BorshSerialize},
 };
 
-#[derive(BorshDeserialize, BorshSerialize, BorshSize)]
+#[derive(BorshDeserialize, BorshSerialize, BorshSize, Clone, Copy, Debug)]
 #[repr(u16)]
 pub enum Validation {
     None,
