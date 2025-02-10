@@ -8,7 +8,13 @@ use {
     solana_program::pubkey, solana_program::pubkey::Pubkey,
     spl_name_service::state::get_seeds_and_key,
 };
+ 
 
+
+#[cfg(feature = "devnet")]
+pub const ROOT_DOMAIN: Pubkey = pubkey!("5eoDkP6vCQBXqDV9YN2NdUs3nmML3dMRNmEYpiyVNBm2");
+
+#[cfg(not(feature = "devnet"))]
 pub const ROOT_DOMAIN: Pubkey = pubkey!("58PwtjSDuFHuUkYjH9BYnnQKHfwo9reZhC2zMJv9JPkx");
 
 pub fn get_hashed_name(record: &str) -> Vec<u8> {
