@@ -20,6 +20,10 @@ Devnet program ID `CESqFKdsJGmUZ3gkHgFmyCxrJcYftkTqrjF9nJ6wpMws`
 
 ## Features
 
+---
+
+### Fix build issues
+
 This smart contract implements the specifications outlined in the SNS Improvement Proposal (SNS-IP) Number 3, as detailed [here](https://github.com/Bonfida/sns-ip/blob/master/proposals/sns-ip-3.md).
 
 ## Security
